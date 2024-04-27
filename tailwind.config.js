@@ -12,6 +12,59 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        dashboard: "#FFF4DF",
+      },
+      keyframes: {
+        imageResize371: {
+          "0%, 100%": {
+            width: "350px"
+          },
+          "50%": {
+            width: "400px",
+          },
+        },
+        imageResize539: {
+          "0%, 100%": {
+            width: "540px"
+          },
+          "50%": {
+            width: "450px",
+          },
+        },
+        imageResize260: {
+          "0%, 100%": {
+            width: "240px"
+          },
+          "50%": {
+            width: "200px",
+          },
+        },
+        imageResizeIn299: {
+          "0%, 100%": {
+            width: "210px"
+          },
+          "50%": {
+            width: "170px",
+          },
+        },
+        imageResizeOut299: {
+          "50%": {
+            width: "210px",
+          },
+          "0%, 100%": {
+            width: "180px"
+          },
+        },
+        imageResize158: {
+          "0%, 100%": {
+            width: "150px"
+          },
+          "50%": {
+            width: "170px",
+          },
+        },
+      },
     },
   },
   plugins: [],
