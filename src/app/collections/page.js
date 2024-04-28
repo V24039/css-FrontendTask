@@ -5,6 +5,7 @@ import ImageCarsouel from "@/components/ImageCarsouel";
 import TabButton from "@/components/TabButton";
 import React from "react";
 import EventRoll from "../EventRoll";
+import EventDetails from "@/components/EventDetails";
 
 const Collection = () => {
   const collectionUrl = [
@@ -24,12 +25,16 @@ const Collection = () => {
             <TabButton />
           </div>
           <div className="bg-violet-400">
-            <EventRoll/>
+            <EventRoll />
           </div>
-          <div className="bg-red-900 w-2/3">
-            Event : Oasis Bus tour , JLN Stadium , Delhi, vent : Oasis Bus tour
-            , JLN Stadium , Delhi, Collection Live : Meta Lives , live on
-            astrix, Collection Live : Meta Lives , live on astri,
+          <div className="w-2/3">
+            <EventDetails
+              date="04/3/2024 @19:00"
+              descp="Lorem ipsum dolor sit amet consectetur. Ac lorem massa in morbi et sed ipsum. Pellentesque mattis condimentum ut nulla. "
+              heading="Collectible"
+              name="Meta Lives"
+              venue="Astrix"
+            />
           </div>
         </div>
       </div>
