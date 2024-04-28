@@ -9,10 +9,10 @@ const ImageCarsouel = ({ content }) => {
 
   const changeSlide = () => {
     myInterval = setInterval(() => {
-      if (current === content.length - 1) {
-        setCurrentIndex(0);
+      if (current === content.length - 1) { // last image
+        setCurrentIndex(0); // to point to the first image
       } else {
-        setCurrentIndex((prev) => prev + 1);
+        setCurrentIndex((prev) => prev + 1); // updating the current to current image index
       }
     }, 2000);
   };
@@ -26,7 +26,7 @@ const ImageCarsouel = ({ content }) => {
       <div className="relative left-96 pb-16">
         <div
           className="flex gap-5 transition ease-out duration-1000"
-          style={{ transform: `translateX(-${current * 550}px)` }}
+          style={{ transform: `translateX(-${current * 550}px)` }} // for 1 index translateX(-550px)
         >
           {content?.map((value, index) => (
             <div key={`event-${index}`}>

@@ -17,7 +17,7 @@ const Events = () => {
 
   return (
     <div className="bg-black h-screen">
-      <EventMainPage eventType="collection" />
+      <EventMainPage eventType="events" />
       <div className="absolute top-0">
         <div className="flex z-40 w-screen">
           <div className="overflow-x-hidden pt-28">
