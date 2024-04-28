@@ -1,3 +1,5 @@
+const { transform } = require("next/dist/build/swc");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -18,7 +20,7 @@ module.exports = {
       keyframes: {
         imageResize371: {
           "0%, 100%": {
-            width: "350px"
+            width: "350px",
           },
           "50%": {
             width: "400px",
@@ -26,7 +28,7 @@ module.exports = {
         },
         imageResize539: {
           "0%, 100%": {
-            width: "540px"
+            width: "540px",
           },
           "50%": {
             width: "450px",
@@ -34,7 +36,7 @@ module.exports = {
         },
         imageResize260: {
           "0%, 100%": {
-            width: "240px"
+            width: "240px",
           },
           "50%": {
             width: "200px",
@@ -42,7 +44,7 @@ module.exports = {
         },
         imageResizeIn299: {
           "0%, 100%": {
-            width: "210px"
+            width: "210px",
           },
           "50%": {
             width: "170px",
@@ -53,15 +55,23 @@ module.exports = {
             width: "210px",
           },
           "0%, 100%": {
-            width: "180px"
+            width: "180px",
           },
         },
         imageResize158: {
           "0%, 100%": {
-            width: "150px"
+            width: "150px",
           },
           "50%": {
             width: "170px",
+          },
+        },
+        textScroll: {
+          from: {
+            transform: "translateY(0%)",
+          },
+          to: {
+            transform: "translateY(-50%)",
           },
         },
       },

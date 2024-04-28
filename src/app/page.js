@@ -1,10 +1,16 @@
+"use client"
+
 import TextImage from "@/components/TextImage";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+
+  const router = useRouter();
+
   return (
-    <main className="w-full h-screen">
-      <div className="bg-dashboard h-full">
+    <main>
+      <div className="bg-dashboard" onClick={()=>router.push("/events")}>
         <header className="flex gap-5 pt-20 pl-12">
           <Image
             src="/logo.svg"
@@ -15,7 +21,7 @@ export default function Home() {
           />
           <span className="font-bold text-5xl text-black">Astrix.</span>
         </header>
-        <section className="font-bold text-5xl mx-auto w-1/2 text-black py-44 text-left">
+        <section className="font-bold text-5xl text-nowrap mx-auto w-1/2 text-black py-44">
           <p>
             WE{" "}
             <Image
