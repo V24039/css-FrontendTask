@@ -7,18 +7,11 @@ import React from "react";
 import EventRoll from "../EventRoll";
 
 const Collection = () => {
-  const eventsUrl = [
+  const collectionUrl = [
     { album: "Lunar Palace", artist: "Kanye west", url: "/collections1.png" },
     { album: "Lunar Palace", artist: "Kanye west", url: "/collections2.png" },
     { album: "Lunar Palace", artist: "Kanye west", url: "/collections3.png" },
     { album: "Lunar Palace", artist: "Kanye west", url: "/collections4.png" },
-  ];
-
-  const rollText = [
-    "Event : Oasis Bus tour , JLN Stadium , Delhi",
-    "Event : Oasis Bus tour , JLN Stadium , Delhi",
-    "Collection Live : Meta Lives , live on astrix",
-    "Collection Live : Meta Lives , live on astrix",
   ];
 
   return (
@@ -27,11 +20,11 @@ const Collection = () => {
       <div className="absolute top-0">
         <div className="flex z-40 w-screen">
           <div className="overflow-x-hidden pt-28">
-            <ImageCarsouel content={eventsUrl} />
+            <ImageCarsouel content={collectionUrl} />
             <TabButton />
           </div>
           <div className="bg-violet-400">
-            <EventRoll rollText={rollText} />
+            <EventRoll/>
           </div>
           <div className="bg-red-900 w-2/3">
             Event : Oasis Bus tour , JLN Stadium , Delhi, vent : Oasis Bus tour

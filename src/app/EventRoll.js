@@ -1,7 +1,15 @@
 import React from "react";
 
-const EventRoll = ({ rollText }) => {
+const EventRoll = () => {
   const displayText = rollText.join(" * ");
+
+  const rollText = [
+    "Event : Oasis Bus tour , JLN Stadium , Delhi",
+    "Event : Oasis Bus tour , JLN Stadium , Delhi",
+    "Collection Live : Meta Lives , live on astrix",
+    "Collection Live : Meta Lives , live on astrix",
+  ];
+
   return (
     <div className="px-12 h-screen overflow-hidden">
       <p
