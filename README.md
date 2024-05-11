@@ -14,7 +14,7 @@ npm run dev
 ```
 ## Vercel link
 
-[Web Link](https://venu-g-soganadgi-wasserstoff-frontend-task.vercel.app/)
+[Web Link](https://event-css.vercel.app/)
 
 Used google with trail and error to get the animations done, for remaining part I used my React knlowedge to complete the task
 
